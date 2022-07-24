@@ -16,7 +16,7 @@ router.post('/post', (req, res) => {
         const modelString = req.body.model;
         fs.writeFileSync('model.obj', modelString)
     }
-    res.download('./model.obj');  
+    res.download('model.obj');  
 });
 
 module.exports = router;
