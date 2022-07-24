@@ -7,7 +7,9 @@ const cros = require('cors');
 const app = express();
 const port = 3000;
 
-app.use(cros());
+app.use(cros({
+    origin: '*'
+}));
 
 app.use(bodyParser.urlencoded({
     limit: '50mb',
@@ -25,7 +27,7 @@ app.get('/', (req, res) => {
 app.post('/post', (req, res) => {
     console.log('reqested');
     console.log(req.body);
-    res.end('data recived');
+    res.send('data recived');
 });
 
 app.listen(port, () => {
