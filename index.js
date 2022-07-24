@@ -11,6 +11,8 @@ const port = 3000;
 app.use(corsMiddleware);
 app.options('*', corsMiddleware);
 
+app.use(express.static('./public'));
+
 app.use(bodyParser.urlencoded({
     limit: '50mb',
     extended: false
