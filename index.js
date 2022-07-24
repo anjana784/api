@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const router = require('./routes');
 const corsMiddleware = require('./cors');
 const express = require('express');
