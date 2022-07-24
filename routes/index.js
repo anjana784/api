@@ -10,13 +10,24 @@ router.get('/', (req, res) => {
 });
 
 router.post('/post', (req, res) => {
+
     console.log("post request to /post");
-    if(typeof req.body.model == 'string') {
+    if (typeof req.body.model == 'string') {
+
+        const isModelExists = fs.existsSync(`${__dirname}/model.obj`);;
+
+
+        if (isModelExists) {
+            fs.unlinkSync(`${__dirname}/model.obj`);
+        }
+
         console.log('model was loded to the api');
         const modelString = req.body.model;
-        fs.writeFileSync('model.obj', modelString)
+        fs.appendFileSync(`${__dirname}/model.obj`, modelString);
+        res.sendFile(`${__dirname}/model.obj`);
+
     }
-    res.download('model.obj');  
+
 });
 
 module.exports = router;
