@@ -15,7 +15,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json({
-    limit: '50mb'
+    limit: '50mb',
+    strict: false
 }));
 
 app.use(router);
