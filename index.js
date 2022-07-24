@@ -7,6 +7,7 @@ const app = express();
 const port = 3000;
 
 app.use(corsMiddleware);
+app.options('*', corsMiddleware);
 
 app.use(bodyParser.urlencoded({
     limit: '50mb',
