@@ -1,4 +1,5 @@
 const fs = require('fs');
+const obj2gltf = require('obj2gltf');
 
 const express = require('express');
 
@@ -14,17 +15,45 @@ router.post('/post', (req, res) => {
     console.log("post request to /post");
     if (typeof req.body.model == 'string') {
 
-        const isModelExists = fs.existsSync(`${__dirname}/model.obj`);;
+        const isModelObjExists = fs.existsSync(`${__dirname}/model/model.obj`);
 
 
-        if (isModelExists) {
-            fs.unlinkSync(`${__dirname}/model.obj`);
+        if (isModelObjExists) {
+            fs.unlinkSync(`${__dirname}/model/model.obj`);
         }
 
         console.log('model was loded to the api');
         const modelString = req.body.model;
-        fs.appendFileSync(`${__dirname}/model.obj`, modelString);
-        res.sendFile(`${__dirname}/model.obj`);
+
+
+        const newModelString = modelString.replace(
+            'o \nusemtl res_id:144410\n',
+            'mtllib Broers_Design_Nederland_materials.mtl\n\no Broers_Design_Nederland\nusemtl Broers_Design_Nederland_144410\n'
+        );
+        fs.appendFileSync(`${__dirname}/model/model.txt`, newModelString);
+
+        fs.appendFileSync(`${__dirname}/model/model.obj`, modelString);
+
+        const isModelGlbExists = fs.existsSync(`${__dirname}/model/model.glb`);
+
+        console.log(isModelGlbExists);
+
+        if (isModelGlbExists) {
+            fs.unlinkSync(`${__dirname}/model/model.glb`);
+            console.log('delete model if it exist');
+        }
+
+        const options = {
+            binary: true
+        }
+
+        obj2gltf(`${__dirname}/model/model.obj`, options)
+            .then((glb) => {
+                fs.appendFileSync(`${__dirname}/model/model.glb`, glb);
+            })
+            .then((result) => {
+                res.sendFile(`${__dirname}/model/model.glb`);
+            });
 
     }
 

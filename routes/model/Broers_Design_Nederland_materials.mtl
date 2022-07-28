@@ -1,0 +1,332 @@
+# Broers Design mtl
+# licencing contact info@broersdesign.com
+
+#------RANDOBJECTEN-----------RANDOBJECTEN----------RANDOBJECTEN---------
+
+#Magazine
+newmtl Broers_Design_Nederland_144410
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_144410.jpg
+
+
+#Humans
+newmtl Broers_Design_Nederland_52615
+Ns 0.166090
+Ka 1.000000 1.000000 1.000000
+Kd 0.439216 0.436078 0.436078
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.800000
+illum 9
+
+
+#------ONDERSTELLEN-----------ONDERSTELLEN----------ONDERSTELLEN---------
+
+#zwart PLASTIC
+newmtl Broers_Design_Nederland_157585
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.129412 0.129412 0.129412
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+
+#Onderstel zwart BlackFTX9005
+newmtl Broers_Design_Nederland_156947
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_156947.jpg
+
+
+#Antraciet ZwartgrijsFTX7021 Slate grey
+newmtl Broers_Design_Nederland_163226
+Ns 70.559986
+Ka 0.140000 0.140000 0.140000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Broers_Design_Nederland_163226.jpg
+
+
+#Onderstel blanco puur wit WhiteFTX9010
+newmtl Broers_Design_Nederland_156948
+Ns 81.000006
+Ka 0.140000 0.140000 0.140000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Broers_Design_Nederland_156948.jpg
+
+
+#Onderstel WineRedFTX3005
+newmtl Broers_Design_Nederland_156949
+Ns 116.640009
+Ka 0.140000 0.140000 0.140000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Broers_Design_Nederland_156949.jpg
+
+
+#Onderstel SteelBlueFTX5011
+newmtl Broers_Design_Nederland_156950
+Ns 81.000006
+Ka 0.140000 0.140000 0.140000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Broers_Design_Nederland_156950.jpg
+
+
+#Onderstel NutBrownFTX8011
+newmtl Broers_Design_Nederland_156951
+Ns 81.000006
+Ka 0.140000 0.140000 0.140000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Broers_Design_Nederland_156951.jpg
+
+
+#Onderstel NATOFTX6014
+newmtl Broers_Design_Nederland_156952
+Ns 81.000006
+Ka 0.140000 0.140000 0.140000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd Broers_Design_Nederland_156952.jpg
+
+
+
+#------TAFELBLADEN-----------TAFELBLADEN----------TAFELBLADEN---------
+
+
+#Strak katoenwit
+newmtl Broers_Design_Nederland_164563
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_164563.jpg
+
+
+#Strak Donkerbruin
+newmtl Broers_Design_Nederland_164558
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_164558.jpg
+
+
+#Strak steen
+newmtl Broers_Design_Nederland_164565
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_164565.jpg
+
+
+#Strak zwart
+newmtl Broers_Design_Nederland_164568
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_164568.jpg
+
+
+#Blank Strak
+newmtl Broers_Design_Nederland_161603
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_161603.jpg
+
+
+#Diep bruin genoest
+newmtl Broers_Design_Nederland_156786
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_156786.jpg
+
+
+#DiepZwart genoest
+newmtl Broers_Design_Nederland_156798
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_156798.jpg
+
+
+#KatoenWIt genoest
+newmtl Broers_Design_Nederland_156833
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_156833.jpg
+
+
+#SteenGrijs genoest
+newmtl Broers_Design_Nederland_156835
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_156835.jpg
+
+
+#Blank genoest
+newmtl Broers_Design_Nederland_156787
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_156787.jpg
+
+
+#Palisander
+newmtl Broers_Design_Nederland_319691
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_319691.jpg
+
+
+#Ahorn
+newmtl Broers_Design_Nederland_319688
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_319688.jpg
+
+
+#Padoek
+newmtl Broers_Design_Nederland_319685
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_319685.jpg
+
+
+#Eucalyptus
+newmtl Broers_Design_Nederland_319682
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_319682.jpg
+
+
+#Amerikaans Noten
+newmtl Broers_Design_Nederland_319679
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Broers_Design_Nederland_319679.jpg
