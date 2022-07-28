@@ -23,15 +23,20 @@ router.post('/post', (req, res) => {
         }
 
         console.log('model was loded to the api');
-        const modelString = req.body.model;
 
+        let modelString = req.body.model;
 
-        const newModelString = modelString.replace(
-            'o \nusemtl res_id:144410\n',
-            'mtllib Broers_Design_Nederland_materials.mtl\n\no Broers_Design_Nederland\nusemtl Broers_Design_Nederland_144410\n'
+        modelString = modelString.replaceAll(
+            'o',
+            'o Broers_Design_Nederland'
         );
-        fs.appendFileSync(`${__dirname}/model/model.txt`, newModelString);
 
+        modelString = modelString.replaceAll(
+            'res_id:',
+            'Broers_Design_Nederland_'
+        );
+
+        fs.appendFileSync(`${__dirname}/model/model.obj`, 'mtllib Broers_Design_Nederland_materials.mtl\n\n');
         fs.appendFileSync(`${__dirname}/model/model.obj`, modelString);
 
         const isModelGlbExists = fs.existsSync(`${__dirname}/model/model.glb`);
