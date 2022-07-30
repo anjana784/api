@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
 router.post('/post', (req, res) => {
 
     console.log("post request to /post");
+    console.log(req.query.format);
     if (typeof req.body.model == 'string') {
 
         const isModelObjExists = fs.existsSync(`${__dirname}/model/model.obj`);
@@ -22,7 +23,6 @@ router.post('/post', (req, res) => {
             fs.unlinkSync(`${__dirname}/model/model.obj`);
         }
 
-        console.log('model was loded to the api');
 
         let modelString = req.body.model;
 
@@ -39,13 +39,13 @@ router.post('/post', (req, res) => {
         fs.appendFileSync(`${__dirname}/model/model.obj`, 'mtllib Broers_Design_Nederland_materials.mtl\n\n');
         fs.appendFileSync(`${__dirname}/model/model.obj`, modelString);
 
-        const isModelGlbExists = fs.existsSync(`${__dirname}/model/model.glb`);
+        // for glb format
+        if(req.query.format === 'glb') {
+            const isModelGlbExists = fs.existsSync(`${__dirname}/model/model.glb`);
 
-        console.log(isModelGlbExists);
 
         if (isModelGlbExists) {
             fs.unlinkSync(`${__dirname}/model/model.glb`);
-            console.log('delete model if it exist');
         }
 
         const options = {
@@ -59,6 +59,26 @@ router.post('/post', (req, res) => {
             .then((result) => {
                 res.sendFile(`${__dirname}/model/model.glb`);
             });
+        }
+
+        // for gltf format
+        if(req.query.format === 'gltf') {
+            const isModelGlbExists = fs.existsSync(`${__dirname}/model/model.gltf`);
+
+
+        if (isModelGlbExists) {
+            fs.unlinkSync(`${__dirname}/model/model.gltf`);
+        }
+
+        obj2gltf(`${__dirname}/model/model.obj`)
+            .then((gltf) => {
+                const data = Buffer.from(JSON.stringify(gltf));
+                fs.appendFileSync(`${__dirname}/model/model.gltf`, data);
+            })
+            .then((result) => {
+                res.sendFile(`${__dirname}/model/model.gltf`);
+            });
+        }
 
     }
 
