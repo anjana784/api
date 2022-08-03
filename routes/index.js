@@ -79,6 +79,12 @@ router.post('/post', (req, res) => {
                 res.sendFile(`${__dirname}/model/model.gltf`);
             });
         }
+		
+		// for obj format
+        if(req.query.format === 'obj'){
+                res.sendFile(`${__dirname}/model/model.obj`);
+        }
+		
 
     }
 
