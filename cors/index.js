@@ -1,7 +1,7 @@
 const cors = require('cors');
 
 const corsOptions = {
-    origin: 'https://www.broersdesign.com',
+	origin: '*',
     optionsSuccessStatus: 200
 }
 

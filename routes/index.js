@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     console.log('get request to /');
-    res.send(`api.broersdesign.com`)
+    res.send(`convert.broersdesign.com`)
 });
 
 router.post('/post', (req, res) => {
