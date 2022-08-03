@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     console.log('get request to /');
-    res.send(`api.broersdesign.com`)
+    res.send(`convert.broersdesign.com`)
 });
 
 router.post('/post', (req, res) => {
@@ -79,6 +79,12 @@ router.post('/post', (req, res) => {
                 res.sendFile(`${__dirname}/model/model.gltf`);
             });
         }
+		
+		// for obj format
+        if(req.query.format === 'obj'){
+                res.sendFile(`${__dirname}/model/model.obj`);
+        }
+		
 
     }
 
