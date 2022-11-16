@@ -5,8 +5,9 @@ const corsMiddleware = require('./cors');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+console.log(process.env.PORT);
+
 const app = express();
-const port = 3000;
 
 app.use(corsMiddleware);
 app.options('*', corsMiddleware);
@@ -25,6 +26,6 @@ app.use(bodyParser.json({
 
 app.use(router);
 
-app.listen(port, () => {
-    console.log(`api is listining on ${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`api is listining on ${process.env.PORT}`);
 });
