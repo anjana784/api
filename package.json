@@ -10,6 +10,7 @@
   "author": "anjana784",
   "license": "ISC",
   "dependencies": {
+    "aspose3dcloud": "^20.5.0",
     "basic-ftp": "^5.0.2",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",

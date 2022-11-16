@@ -1,11 +1,9 @@
 const fs = require('fs');
-
+require('dotenv').config();
 const router = require('./routes');
 const corsMiddleware = require('./cors');
 const express = require('express');
 const bodyParser = require('body-parser');
-
-console.log(process.env.PORT);
 
 const app = express();
 
